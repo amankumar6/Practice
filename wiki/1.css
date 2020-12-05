@@ -1,0 +1,157 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+    background: rgb(0, 255, 255);
+
+}
+a
+{
+    text-decoration: none;
+}
+
+.header
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: 10px;*/
+    background: rgb(27, 40, 56);
+    color: whitesmoke;
+    font-size: 50px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    
+}
+.title
+{
+    padding: 15px;
+}
+.title-link:visited
+{
+    color: whitesmoke;
+}
+.title-link:link
+{
+    color: whitesmoke;
+}
+
+.horizontal
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: 0;*/
+    position: fixed;
+    top: 89.5px;
+    width: 99%;
+}
+.horizontal-content 
+{
+    float: left;
+}
+.horizontal-content #horizontal-link
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.horizontal-content #horizontal-link:hover:not(.horizontal-active) 
+{
+    background-color: #555;
+    color: white;
+}
+.horizontal-active
+{
+    background-color: #4CAF50;
+}
+
+.vertical 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #333;
+    /*position: -webkit-sticky;*/
+    position: fixed;
+    top: 137px;
+    height: 92%;
+    overflow: auto;
+}
+.vertical-content #vertical-link
+{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.vertical-content #vertical-link.active-vertical 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+.vertical-content #vertical-link:hover:not(.active-vertical) 
+{
+    background-color: #555;
+    color: white;
+}
+
+.main-content
+{
+    margin-left: 20%;
+    padding: 1px 16px;
+    position: fixed;
+    top: 137px;
+    height: 92%;
+    overflow: auto;
+    /*position: fixed;
+    overflow: auto;*/
+}
+
+.follow
+{
+    
+    width: 100%;
+    background: rgb(27, 40, 56);
+    color: white;
+    text-align: center;
+    
+}
+.social:link
+{
+    color: white;
+}
+.social:visited
+{
+    color: white;
+}
+.socialmedia
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#socialmedia-links
+{
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+.social:link
+{
+    color: white;
+}
+.social:visited
+{
+    color: white;
+}

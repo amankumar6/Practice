@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<style>
+    .xd {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body">
+                    <span>
+                        Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Dolorem sit possimus unde magnam, consectetur, aspernatur voluptas nisi
+                        doloremque earum cum labore asperiores rerum? Quia est doloremque repudiandae omnis assumenda
+                        reiciendis perspiciatis, rem ipsam placeat? Ducimus dicta hic accusamus quia impedit maiores,
+                        quis, tempora modi cupiditate consequuntur veniam cumque sint eum!
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Dolorem sit possimus unde magnam, consectetur, aspernatur voluptas nisi
+                        doloremque earum cum labore asperiores rerum? Quia est doloremque repudiandae omnis assumenda
+                        reiciendis perspiciatis, rem ipsam placeat? Ducimus dicta hic accusamus quia impedit maiores,
+                        quis, tempora modi cupiditate consequuntur veniam cumque sint eum!</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Dolorem sit possimus unde magnam, consectetur, aspernatur voluptas nisi
+                        doloremque earum cum labore asperiores rerum? Quia est doloremque repudiandae omnis assumenda
+                        reiciendis perspiciatis, rem ipsam placeat? Ducimus dicta hic accusamus quia impedit maiores,
+                        quis, tempora modi cupiditate consequuntur veniam cumque sint eum!</span></div>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header xd">
+
+                    <div class="valign-wrapper">
+                        <span>
+                            App
+                        </span>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+
+                    <div>
+                        <a href="https://google.com" target="_blank">Google</a>
+                    </div>
+
+                </div>
+                <div class="collapsible-body">
+                    <span>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae autem illum enim,
+                        laudantium, voluptates dolorum sapiente cumque iusto, excepturi libero aut nobis. Sed
+                        similique molestiae soluta aperiam cupiditate impedit odio ipsa veritatis repellat fugit
+                        quisquam illum, tempore officia ab officiis porro ducimus debitis, obcaecati quam tempora
+                        omnis voluptates eaque voluptate! Omnis distinctio doloremque eligendi ipsa, exercitationem
+                        sint velit deserunt et dignissimos id voluptates, eius eum amet magnam reprehenderit sed.
+                        Sapiente quis officiis mollitia, veritatis dolorem repellendus odio qui? Voluptates nesciunt
+                        modi libero dolore placeat maxime consectetur, nostrum reiciendis, illum excepturi possimus
+                        dicta consequuntur delectus repudiandae aliquam corporis alias veniam eveniet beatae
+                        deserunt eum! Eum corporis quas sint esse quidem, facilis fugit, obcaecati asperiores,
+                        impedit magni aliquid deleniti. Est accusamus nostrum commodi fugit, consequuntur sequi
+                        similique debitis officia fuga voluptates corrupti sint et necessitatibus reprehenderit
+                        velit possimus nulla ad sit, iusto voluptate obcaecati praesentium, exercitationem maxime.
+                        Aspernatur dignissimos obcaecati maiores distinctio?
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
+</html>

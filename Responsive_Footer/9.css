@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+footer
+{
+  background-color: rgb(217, 217, 217);
+}
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 20px;
+}
+.inner-footer
+{
+  list-style: none;
+}
+.inner-footer-list
+{
+  padding: 5px;
+}
+.inner-footer-list a
+{
+  text-decoration: none;
+  color: black;
+}
+.inner-footer-list a:hover {
+  color: rgb(88, 137, 178);
+}

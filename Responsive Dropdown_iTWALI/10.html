@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="10.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <div class="logo-image">
+                <a href="index.html" rel="home"><img width="97" height="97"
+                        src="https://itwali.com/wp-content/uploads/2020/07/l1-77x77.png" alt=""
+                        srcset="https://i2.wp.com/itwali.com/wp-content/uploads/2020/07/l1.png?resize=77%2C77&amp;ssl=1 77w, https://i2.wp.com/itwali.com/wp-content/uploads/2020/07/l1.png?resize=140%2C140&amp;ssl=1 140w, https://i2.wp.com/itwali.com/wp-content/uploads/2020/07/l1.png?w=160&amp;ssl=1 160w"
+                        sizes="(max-width: 77px) 100vw, 77px" /></a>
+            </div>
+            <div class="logo-text">
+                <a href="index.html" rel="home">
+                    <p style="font-size:40px">ItWali</p>
+                </a>
+
+                <p style="font-size: 15px;">
+                    A House of Income Tax Solution
+                </p>
+            </div>
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn" class="check-box">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li>
+                <label for="btn-1" class="show">Knowledge Bank <i class="fas fa-angle-down"></i></label>
+                <a href="#">Knowledge Bank <i class="fas fa-angle-down"></i></a>
+                <input type="checkbox" id="btn-1" class="check-box">
+                <ul>
+                    <li class="nav-inner-list"><a href="#">Article</a></li>
+                    <li class="nav-inner-list"><a href="#">Press Releases</a></li>
+                    <li class="nav-inner-list"><a href="#">CBDT Notification</a></li>
+                    <li class="nav-inner-list"><a href="#">Income Tax Circular</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show"><i class="fas fa-user-circle "></i> My Account <i
+                        class="fas fa-angle-down"></i></label>
+                <a href="#"><i class="fas fa-user-circle "></i> My Account <i class="fas fa-angle-down"></i></a>
+                <input type="checkbox" id="btn-2" class="check-box">
+                <ul>
+                    <li class="nav-inner-list"><a href="#">Login</a></li>
+                    <li class="nav-inner-list"><a href="#">Registration</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><button class="contact">Contact</button></a>
+            </li>
+            <li>
+                <a href="#">
+                    <input type="text" placeholder="Type to Search" class="search-txt" id="a">
+                    <span class="search-icon" onclick="show()"><i class="fas fa-search"  ></i></span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="content">
+        <header>Responsive Drop-down Menu Bar</header>
+        <p>HTML and CSS (Media Query)</p>
+    </div>
+    <script>
+        $('.icon').click(function () {
+            $('span').toggleClass("cancel");
+        });
+        let searchicon = document.querySelector('.search-icon');
+        let searchtxt = document.querySelector('.search-txt');
+
+        function show() {
+            searchtxt.style.display != "none" ? searchtxt.style.display = "none" : searchtxt.style.display = "inline";
+        }
+    </script>
+
+</body>
+
+</html>

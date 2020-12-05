@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body style="background-image: url('1.jpg');background-attachment: fixed;background-size: cover; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: rgb(252, 166, 8);">
+        <h1 style="background: white;"><u>Enter Your Details Here</u></h1>
+        <div id="regform">
+            <form>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" placeholder="First Name" required>
+
+                <label for="middlename">Middle Name</label>
+                <input type="text" name="middlename" placeholder="Middle Name">
+
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+                <br>
+                <div>
+                    <label for="gender">Gender</label>
+                    <select name="gender">
+                        <option selected disabled></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="fathername">Father's Name</label>
+                    <input type="text" name="fathername" placeholder="Father's Name" required>
+
+                    <label for="mothername">Mother's Name</label>
+                    <input type="text" name="mothername" placeholder="Mother's Name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email ID</label>
+                    <input type="email" name="email" placeholder="abcd@example.com" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password"required>
+                </div>
+                <br>
+                <div>
+                    <label for="bd">Date of Birth</label>
+                    <input type="date" name="bd" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="agree">
+                    <label for="agree">I accept all </label>
+                    <a href="https://www.youtube.com/channel/UCOcZ_NXVu1p7m_sW0RO4_VA" target="_blank">Terms and Conditions</a>
+                </div>
+                <br>
+                <input type="submit">
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

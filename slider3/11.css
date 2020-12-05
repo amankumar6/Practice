@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: sans-serif;
+}
+
+.main-carousel {
+    background: #EEE;
+}
+
+.main-carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.main-carousel-cell img {
+    display: block;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-carousel-cell img {
+        height: 400px;
+    }
+}

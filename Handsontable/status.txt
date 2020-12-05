@@ -1,0 +1,21 @@
+
+body
+    <vaadin-dialog-overlay id="overlay" focus-trap="" with-backdrop="" role="dialog" opened=""></vaadin-dialog-overlay>
+
+    #shadow-root
+
+        <div part="overlay" id="overlay" tabindex="0" style="height: 100%; width: 100%;">
+        
+            <div id="resizerContainer" class="resizer-container" style="display: none;"><div part="content" id="content">
+            
+            koisection
+                closeButton
+                
+                koiImagePreview
+                    handsontablecontainer
+                        tableHeader 
+                            tableName
+                            tableBtn
+                        handsontable
+
+                koiResponsePreview

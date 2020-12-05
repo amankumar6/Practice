@@ -1,0 +1,24 @@
+body
+{
+	min-height: 100vh;
+	background: linear-gradient(-45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    overflow: hidden;
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 60s ease-in-out infinite;
+}
+@keyframes change
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0 50%;
+    }
+}

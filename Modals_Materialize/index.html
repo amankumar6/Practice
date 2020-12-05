@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Modals</title>
+</head>
+
+<body>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit illum velit reiciendis praesentium, facere saepe id ad autem magnam aspernatur deleniti quis tenetur, blanditiis iusto quas labore cumque molestiae impedit hic fugiat aliquam laborum soluta odio? Quasi, incidunt pariatur neque nesciunt obcaecati, voluptates dicta nisi ab natus magni debitis molestiae.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>

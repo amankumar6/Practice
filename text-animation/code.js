@@ -9,7 +9,7 @@ function animation() {
     text.reveal(2000);
 }
 
-fetch('http://api.quotable.io/random')
-    .then((blob) => blob.json())
-    .then((data) => (document.querySelector('.data').innerHTML = `${data.content} - ${data.author}`))
-    .then(animation);
+$.get('http://api.quotable.io/random', (data) => {
+    $('.data').text(`${data.content} - ${data.author}`);
+    animation();
+});

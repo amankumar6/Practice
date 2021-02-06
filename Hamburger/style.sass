@@ -1,0 +1,146 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Raleway', sans-serif
+
+body
+    background: #5a1fa8
+
+nav
+    padding: 15px 30px
+    color: white
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // min-height: 10vh
+    background-color: rgb(51, 51, 51)
+
+.logo
+    text-transform: uppercase
+    letter-spacing: 5px
+    font-size: 20px
+
+.nav-links
+    list-style: none
+    display: flex
+    justify-content: space-around
+    // width: 50%
+
+    li
+        list-style: none
+        margin: 0 15px
+
+        a
+            color: white
+            text-decoration: none
+            letter-spacing: 3px
+            font-weight: 400
+            font-size: 14px
+
+.burger
+    display: none
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    cursor: pointer
+
+    div
+        // width: 25px
+        height: 3px
+        border-radius: 1px
+        background-color: white
+        margin: 3.5px
+        transition: all 300ms ease-in
+
+    .line1
+        width: 40px
+    .line2
+        width: 30px
+    .line3
+        width: 20px
+
+.main
+    color: #b9b8b8
+    padding: 40px 65px
+    text-align: justify
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    // height: 90vh
+
+.removeOverflow
+    overflow-y: hidden !important
+
+@media screen and (max-width:800px)
+    body
+        overflow-x: hidden !important
+
+    .main
+        padding: 40px 35px
+
+    .nav-links
+        position: absolute
+        // padding: 0 20px
+        top: 0
+        right: 0
+        height: 100vh
+        background-color: rgb(51, 51, 51)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        width: 100%
+        transform: translateX(-100%)
+        transition: all 400ms cubic-bezier(.694, .048, .335, 1)
+
+        li
+            margin: 25px 25%
+
+    .burger
+        display: flex
+
+    .nav-links li
+        opacity: 0
+
+.nav-active
+    // position: relative
+    transform: translateX(0%)
+
+.nav-active::after
+    content: ''
+    background: red
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    animation: navstripefade 600ms cubic-bezier(.694, .048, .335, 1) forwards
+
+@keyframes navstripefade
+    from
+        width: 100%
+
+    to
+        width: 0
+
+.toggle
+    .line1
+        width: 25px
+        transform: rotate(-405deg) translate(-8px, 8px)
+
+    .line2
+        opacity: 0
+
+    .line3
+        width: 25px
+        transform: rotate(405deg) translate(-6px, -6px)
+
+@keyframes navlinkfade
+    from
+        opacity: 0
+        transform: translateY(100%)
+
+    to
+        opacity: 1
+        transform: translateY(0)

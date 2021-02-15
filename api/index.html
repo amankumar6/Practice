@@ -18,6 +18,7 @@
             //     .then((data) => console.log(data));
             let response = await fetch(endpoint2)
             let data = await response.json();
+            $('body').append(`<pre>${JSON.stringify(data, null, 2)}</pre>`)
             console.log(data)
             console.log("data has been fetched form the endpoint")
             anotherFunction()

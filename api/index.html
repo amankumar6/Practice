@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>API</title>
 </head>
 
 <body>
     <script>
         const endpoint = "https://api.covid19api.com/country/india/status/confirmed?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z";
+        const endpoint2 = "https://api.github.com/users/amankumar6";
 
-        fetch(endpoint)
-            .then((blob) => blob.json())
-            .then((data) => console.log(data));
+        async function fetchData() {
+            // let response = await fetch(endpoint2).then((blob) => blob.json())
+            //     .then((data) => console.log(data));
+            let response = await fetch(endpoint2)
+            let data = await response.json();
+            console.log(data)
+            console.log("data has been fetched form the endpoint")
+            anotherFunction()
+        }
+
+        function anotherFunction(){
+            console.log('this is an another funtion')
+        }
+
+        $(document).ready(fetchData);
+
     </script>
 </body>
 

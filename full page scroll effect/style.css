@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-transform: capitalize;
+  scroll-snap-align: start;
+}
+
+.container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one {
+  background: #24a48a;
+}
+
+.second {
+  background: #d34f4f;
+}
+
+.third {
+  background: #435baf;
+}
+
+.forth {
+  background: #ffa07a;
+}
+
+.fifth {
+  background: #24a48a;
+}
+
+.sixth {
+  background: #d34f4f;
+}
+
+.seventh {
+  background: #435baf;
+}
+
+.eight {
+  background: #ffa07a;
+}
+/*# sourceMappingURL=style.css.map */

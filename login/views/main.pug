@@ -1,0 +1,20 @@
+extends layout 
+
+block main
+    
+    .alert.alert-success.alert-dismissible.fade.show
+        .p You have been Loged in !
+        button.btn-close(type="button" data-bs-dismiss="alert" aria-label="Close")
+
+    .card.text-white.bg-dark.mb-3
+        .card-body
+            if user
+                p Your Username is 
+                    b= user.username 
+                p Your EmailId is 
+                    b= user.email
+            else 
+                .spinner-border.text-primary(role="status")
+                    span.visually-hidden Loading...
+                div
+            a.btn.btn-primary(href="/logout" role="button") Logout

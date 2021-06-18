@@ -1,0 +1,26 @@
+extends layout 
+
+block login
+    .card.text-white.bg-dark.mb-3
+        h5.card-header REGISTER
+
+        .card-body
+            form(action="/register" method="POST")
+
+                .mb-3
+                    label.form-label(for="username") Username
+                    input#username.form-control(type="text" name="username" required)
+
+                .mb-3
+                    label.form-label(for="email") Enter Email
+                    input#email.form-control(type="email" aria-describedby="emailHelp" name="email" required)
+
+                .mb-3 
+                    label.form-label(for="password") Password
+                    input#password.form-control(type="password" name="password")
+
+                .mb-3 
+                    label.form-label(for="confirm-password") Confirm Password
+                    input#confirm-password.form-control(type="password" name="confirm-password")
+
+                button.btn.btn-primary(type="submit") Register

@@ -8,6 +8,12 @@ This is a place where I test something and practice something. This repository i
 
 + [Top10List](https://github.com/amankumar6/Top10List-React)
 
++ [ToDo](https://github.com/amankumar6/ToDo)
+
++ [Covid19-Status](https://github.com/amankumar6/Covid19-Status)
+
++ [Missionaries & Cannibals](https://github.com/amankumar6/missionaries-and-cannibals)
+
 + [Basic Calculator](https://github.com/amankumar6/Basic-Calculator)
 
 + [WordCountingApp](https://github.com/amankumar6/WordCountingApp)

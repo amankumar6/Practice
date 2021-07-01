@@ -26,3 +26,5 @@ yarn-error.log*
 *.rar
 *.mp3
 *.mp4
+# Local Netlify folder
+.netlify

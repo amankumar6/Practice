@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import data from './content/data';
 
-import '../style/App.css';
+import '../style/App.sass';
 
 import List from './List';
 import Image from './Image';
@@ -10,7 +10,6 @@ import Image from './Image';
 export class App extends Component {
     state = {
         currentIndex: 0,
-        allDiv: [],
     };
 
     componentDidMount() {
@@ -18,46 +17,36 @@ export class App extends Component {
     }
 
     keypressed = (e) => {
-        let { currentIndex, allDiv } = this.state;
-
-        if (e.keyCode == '38' || e.keyCode == '40') {
-            this.remove_all_active_list();
-            // loadImage(currentIndex);
-        }
-
+        let { currentIndex } = this.state;
+        if (e.keyCode == '38' || e.keyCode == '40') e.preventDefault();
         if (e.keyCode == '38') {
-            let newCurrentIndex = currentIndex;
-            newCurrentIndex = (currentIndex - 1 + data.length) % data.length;
             this.setState({
-                currentIndex: newCurrentIndex,
+                currentIndex: (currentIndex - 1 + data.length) % data.length,
             });
-            allDiv[currentIndex].classList.add('active');
         }
-
         if (e.keyCode == '40') {
-            let newCurrentIndex = currentIndex;
-            newCurrentIndex = (currentIndex + 1) % data.length;
             this.setState({
-                currentIndex: newCurrentIndex,
+                currentIndex: (currentIndex + 1) % data.length,
             });
-            allDiv[currentIndex].classList.add('active');
         }
     };
 
-    remove_all_active_list = () =>
-        this.state.allDiv.forEach((el) => el.classList.remove('active'));
-    
-    divElement = (el) => {
+    sendIndex = (i) => {
         this.setState({
-            allDiv: el.childNodes,
+            currentIndex: i,
         });
     };
 
     render() {
         return (
             <div className="container0">
-                <List divElement={this.divElement} />
-                <Image />
+                <List
+                    currentIndex={this.state.currentIndex}
+                    sendIndex={this.sendIndex}
+                />
+                <Image currentIndex={this.state.currentIndex} />
+                <div class="circle1"></div>
+                <div class="circle2"></div>
             </div>
         );
     }

@@ -1,23 +1,43 @@
 const data = [
     {
-        title: 'cat',
-        src: 'https://images.unsplash.com/photo-1561948955-570b270e7c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+        title: 'ToDo',
+        link: 'https://app---todo.herokuapp.com/',
+        src: 'todo.jpg',
     },
     {
-        title: 'cooking couple',
-        src: 'https://images.unsplash.com/photo-1606787620819-8bdf0c44c293?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+        title: 'Top10List',
+        link: 'https://top10list-react.netlify.app/',
+        src: 'top10list.jpg',
     },
     {
-        title: 'bali-kelingking',
-        src: 'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+        title: 'Epic Player',
+        link: 'http://epicplayer.ml/',
+        src: 'epicPlayer.jpg',
     },
     {
-        title: 'NextByk Investor',
-        src: 'https://images.unsplash.com/photo-1623206837956-07dab21608f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+        title: 'Missionaries and Cannibals',
+        link: 'http://boatgame.ml/',
+        src: 'missionaries-and-cannibals.jpg',
     },
     {
-        title: 'interns-performance',
-        src: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+        title: 'Covid-19 Report',
+        link: 'https://report-covid19.netlify.app/',
+        src: 'report-covid19.jpg',
+    },
+    {
+        title: 'Basic-Calculator',
+        link: 'https://basiccal.netlify.app/',
+        src: 'basic-calculator.jpg',
+    },
+    {
+        title: 'Word Counting App',
+        link: 'https://wordcountingapp.netlify.app/',
+        src: 'wordcountingapp.jpg',
+    },
+    {
+        title: 'Hexagonal',
+        link: 'https://hexgonal.netlify.app/',
+        src: 'hexagonal.jpg',
     },
 ];
 

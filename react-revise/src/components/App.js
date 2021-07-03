@@ -1,55 +1,35 @@
 /* eslint-disable eqeqeq */
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from './content/data';
-
-import '../style/App.sass';
-
 import List from './List';
 import Image from './Image';
+import '../style/App.sass';
 
-export class App extends Component {
-    state = {
-        currentIndex: 0,
-    };
+const App = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const sendIndex = (i) => setCurrentIndex(i);
 
-    componentDidMount() {
-        window.addEventListener('keydown', this.keypressed);
-    }
+    useEffect(() => {
+        const keypressed = (e) => {
+            if (e.keyCode == '38' || e.keyCode == '40') e.preventDefault();
 
-    keypressed = (e) => {
-        let { currentIndex } = this.state;
-        if (e.keyCode == '38' || e.keyCode == '40') e.preventDefault();
-        if (e.keyCode == '38') {
-            this.setState({
-                currentIndex: (currentIndex - 1 + data.length) % data.length,
-            });
-        }
-        if (e.keyCode == '40') {
-            this.setState({
-                currentIndex: (currentIndex + 1) % data.length,
-            });
-        }
-    };
+            if (e.keyCode == '38')
+                setCurrentIndex(
+                    (prevIndex) => (prevIndex - 1 + data.length) % data.length
+                );
 
-    sendIndex = (i) => {
-        this.setState({
-            currentIndex: i,
-        });
-    };
+            if (e.keyCode == '40')
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        };
+        window.addEventListener('keydown', keypressed);
+    }, []);
 
-    render() {
-        return (
-            <div className="container0">
-                <List
-                    currentIndex={this.state.currentIndex}
-                    sendIndex={this.sendIndex}
-                />
-                <Image currentIndex={this.state.currentIndex} />
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-            </div>
-        );
-    }
-}
+    return (
+        <div className="container0">
+            <List currentIndex={currentIndex} sendIndex={sendIndex} />
+            <Image currentIndex={currentIndex} />
+        </div>
+    );
+};
 
 export default App;

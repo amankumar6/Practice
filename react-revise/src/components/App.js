@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import data from './content/data';
 import List from './List';
 import Image from './Image';
-import '../style/App.sass';
+import '../style/App.css';
 
 const App = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

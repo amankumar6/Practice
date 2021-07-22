@@ -6,9 +6,9 @@ This is a place where I test something and practice something. This repository i
 
 + [Epic Player](https://github.com/amankumar6/Epic-Player)
 
-+ [Top10List](https://github.com/amankumar6/Top10List-React)
-
 + [ToDo](https://github.com/amankumar6/ToDo)
+
++ [Top10List](https://github.com/amankumar6/Top10List-React)
 
 + [Covid19-Status](https://github.com/amankumar6/Covid19-Status)
 
